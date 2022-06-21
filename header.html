@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------------css files---------- -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <title>Beet.com</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <span class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <nav>
+                <span class="close">X</span>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+              </nav>
+              <a class="brand" href="#">
+                <img class="logo" src="img/logo.jpg" alt="logo">
+              </a>
+              <button type="button" class="btn btn-dark rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Log In</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-light border-0">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Email:</label>
+                  <input type="email" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Password:</label>
+                  <input type="password" class="form-control" id="recipient-pass">
+                </div>
+                <a class="create" href="#">Create Account?</a>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Log In</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+        </div>
+      </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" id="slid1"></div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+        </div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+                <!-- services  -->
+      <section class="section section__height container" id="services">
+          <div class="site-section site-section-sm pb-0">
+              <div class="container">
+                <div class="row">
+                  <form class="form-search col-md-12" style="margin-top: -13px;">
+                    <div class="row  align-items-end">
+                      <div class="col-md-3">
+                        <label for="list-types">Property Types</label>
+                        <div class="select-wrap">
+                          <span class="icon icon-arrow_drop_down"></span>
+                          <select name="list-types" id="list-types" class="form-control d-block rounded-0" style="font-size: large;">
+                            <option value="">Apartment</option>
+                            <option value="">Villa</option>
+                            <option value="">Duplex</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="offer-types">Offer Type</label>
+                        <div class="select-wrap">
+                          <span class="icon icon-arrow_drop_down"></span>
+                          <select name="offer-types" id="offer-types" class="form-control d-block rounded-0" style="font-size: large;">
+                            <option value="">For Sale</option>
+                            <option value="">For Rent</option>
+                            <option value="">For Exchange</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="select-city">Select Location</label>
+                        <div class="select-wrap">
+                          <span class="icon icon-arrow_drop_down"></span>
+                          <select name="select-city" id="select-city" class="form-control d-block rounded-0" style="font-size: large;">
+                            <option value="">Cairo</option>
+                            <option value="">New Cairo</option>
+                            <option value="">West Cairo</option>
+                            <option value="">Shoubra</option>
+                            <option value="">El-Shikh Zayed</option>
+                            <option value="">North Cost</option>
+                            <option value="">العين السخنة</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-3 btn btn-success text-white btn-lg rounded-pill" style="margin-top:15px">
+                        <input type="submit" class=""Search" style="font-size: large;border:0 ;background-color: #198754;">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="view-options bg-white py-3 px-3 d-md-flex justify-content-between">
+                      <div class="mr-auto">
+                        <a href="index.html" class="icon-view view-module active"><span class="icon-view_module"></span></a>
+                        <a href="view-list.html" class="icon-view view-list"><span class="icon-view_list"></span></a>
+                        
+                      </div>
+                      <div class="ml-auto d-flex align-items-center">
+                        <div class="filter-down">
+                          <a href="#" class="view-list px-3 border-right active">All</a>
+                          <a href="#" class="view-list px-3 border-right">Rent</a>
+                          <a href="#" class="view-list px-3">Sale</a>
+                          <a href="#" class="view-list px-3">Exchange</a>
+                        </div>
+        
+        
+                        <div class="select-wrap">
+                          <span class="icon icon-arrow_drop_down"></span>
+                          <select class="form-control form-control-sm d-block rounded-0" id="sort">
+                            <option value="">Sort by</option>
+                            <option value="">Price Ascending</option>
+                            <option value="">Price Descending</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+      </section>
+      <section class="gallery">
+        <div class="site-section site-section-sm bg-light">
+          <div class="container" id="mmmm">
+          
+            <div class="row">
+              <div class="col-lg-10">
+                <div class="row">
+              <div class="col-md-6 col-lg-6 mb-4" id="homy">
+                <div class="property-entry h-100">
+                  <a href="property-details.html" class="property-thumbnail">
+                    <div class="offer-type-wrap">
+                      <span class="offer-type bg-danger">Sale</span>
+                    </div>
+                    <img src="img/slid2.jpg" alt="Image" class="img-fluid">
+                  </a>
+                  <div class="p-4 property-body">
+                    <a href="#" class="property-favorite"><i class="fa-regular fa-heart"></i></span></a>
+                    <h2 class="property-title"><a class="address" href="property-details.html">625 Shokolani St</a></h2>
+                    <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+                    <strong class="property-price text-primary mb-3 d-block text-success">$2,000,000</strong>
+                    <ul class="property-specs-wrap mb-3 mb-lg-0">
+                      <li>
+                        <span class="property-specs">Beds</span>
+                        <span class="property-specs-number">2 <sup>+</sup></span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">Baths</span>
+                        <span class="property-specs-number">2</span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">SQ FT</span>
+                        <span class="property-specs-number">7,000</span>
+                        
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col-md-6 col-lg-6 mb-4">
+                <div class="property-entry h-100">
+                  <a href="property-details.html" class="property-thumbnail">
+                    <div class="offer-type-wrap">
+
+                      <span class="offer-type bg-success">Rent</span>
+                    </div>
+                    <img src="img/slid2.jpg" alt="Image" class="img-fluid">
+                  </a>
+                  <div class="p-4 property-body">
+                    <a href="#" class="property-favorite"><i class="fa-regular fa-heart"></i></span></a>
+                    <h2 class="property-title"><a class="address" href="property-details.html">625 Shokolani St</a></h2>
+                    <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+                    <strong class="property-price text-primary mb-3 d-block text-success">$2,000,000</strong>
+                    <ul class="property-specs-wrap mb-3 mb-lg-0">
+                      <li>
+                        <span class="property-specs">Beds</span>
+                        <span class="property-specs-number">2 <sup>+</sup></span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">Baths</span>
+                        <span class="property-specs-number">2</span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">SQ FT</span>
+                        <span class="property-specs-number">7,000</span>
+                        
+                      </li>
+                    </ul>
+
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6 mb-4">
+                <div class="property-entry h-100">
+                  <a href="property-details.html" class="property-thumbnail">
+                    <div class="offer-type-wrap">
+                      <span class="offer-type bg-success">Rent</span>
+                    </div>
+                    <img src="img/slid2.jpg" alt="Image" class="img-fluid">
+                  </a>
+                  <div class="p-4 property-body">
+                    <a href="#" class="property-favorite"><i class="fa-regular fa-heart"></i></span></a>
+                    <h2 class="property-title"><a class="address" href="property-details.html">625 Shokolani St</a></h2>
+                    <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+                    <strong class="property-price text-primary mb-3 d-block text-success">$2,000,000</strong>
+                    <ul class="property-specs-wrap mb-3 mb-lg-0">
+                      <li>
+                        <span class="property-specs">Beds</span>
+                        <span class="property-specs-number">2 <sup>+</sup></span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">Baths</span>
+                        <span class="property-specs-number">2</span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">SQ FT</span>
+                        <span class="property-specs-number">7,000</span>
+                        
+                      </li>
+                    </ul>
+
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6 mb-4">
+                <div class="property-entry h-100">
+                  <a href="property-details.html" class="property-thumbnail">
+                    <div class="offer-type-wrap">
+                      <span class="offer-type bg-danger">Sale</span>
+                    </div>
+                    <img src="img/slid2.jpg" alt="Image" class="img-fluid">
+                  </a>
+                  <div class="p-4 property-body">
+                    <a href="#" class="property-favorite"><i class="fa-regular fa-heart"></i></span></a>
+                    <h2 class="property-title"><a class="address" href="property-details.html">625 Shokolani St</a></h2>
+                    <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+                    <strong class="property-price text-primary mb-3 d-block text-success">$2,000,000</strong>
+                    <ul class="property-specs-wrap mb-3 mb-lg-0">
+                      <li>
+                        <span class="property-specs">Beds</span>
+                        <span class="property-specs-number">2 <sup>+</sup></span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">Baths</span>
+                        <span class="property-specs-number">2</span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">SQ FT</span>
+                        <span class="property-specs-number">7,000</span>
+                        
+                      </li>
+                    </ul>
+
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6 mb-4">
+              <div class="property-entry h-100">
+                <a href="property-details.html" class="property-thumbnail">
+                  <div class="offer-type-wrap">
+                    <span class="offer-type bg-info">Exchange</span>
+                  </div>
+                  <img src="img/slid2.jpg" alt="Image" class="img-fluid">
+                  </a>
+                  <div class="p-4 property-body">
+                    <a href="#" class="property-favorite"><i class="fa-regular fa-heart"></i></span></a>
+                    <h2 class="property-title"><a class="address" href="property-details.html">625 Shokolani St</a></h2>
+                    <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+                    <strong class="property-price text-primary mb-3 d-block text-success">$2,000,000</strong>
+                    <ul class="property-specs-wrap mb-3 mb-lg-0">
+                      <li>
+                        <span class="property-specs">Beds</span>
+                        <span class="property-specs-number">2 <sup>+</sup></span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">Baths</span>
+                        <span class="property-specs-number">2</span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">SQ FT</span>
+                        <span class="property-specs-number">7,000</span>
+                        
+                      </li>
+                    </ul>
+
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6 mb-4">
+              <div class="property-entry h-100">
+                <a href="property-details.html" class="property-thumbnail">
+                  <div class="offer-type-wrap">
+                    <span class="offer-type bg-info">Exchange</span>
+                  </div>
+                  <img src="img/slid2.jpg" alt="Image" class="img-fluid">
+                  </a>
+                  <div class="p-4 property-body">
+                    <a href="#" class="property-favorite"><i class="fa-regular fa-heart"></i></span></a>
+                    <h2 class="property-title"><a class="address" href="property-details.html">625 Shokolani St</a></h2>
+                    <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+                    <strong class="property-price text-primary mb-3 d-block text-success">$2,000,000</strong>
+                    <ul class="property-specs-wrap mb-3 mb-lg-0">
+                      <li>
+                        <span class="property-specs">Beds</span>
+                        <span class="property-specs-number">2 <sup>+</sup></span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">Baths</span>
+                        <span class="property-specs-number">2</span>
+                        
+                      </li>
+                      <li>
+                        <span class="property-specs">SQ FT</span>
+                        <span class="property-specs-number">7,000</span>
+                        
+                      </li>
+                    </ul>
+
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            <div class=" ads col-lg-2 mb-4 position-relative"> <p class="ad">dasdada</p></div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <a href="/properties.html" class="show">Show More ...</a>
+              </div>
+            </div>
+                </div>
+              
+      </section>
+
+      <section class="premium">
+        <div class="container">
+          <h1 class="text-center">Premuim</h1>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="property-entry h-100">
+                <a href="property-details.html" class="property-thumbnail">
+                  <div class="offer-type-wrap">
+                    <span class="offer-type bg-danger">Sale</span>
+                  </div>
+                  <img src="img/slid2.jpg" alt="Image" class="img-fluid">
+                </a>
+                <div class="p-4 property-body">
+                  <a href="#" class="property-favorite"><i class="fa-regular fa-heart"></i></span></a>
+                  <h2 class="property-title"><a class="address" href="property-details.html">625 Shokolani St</a></h2>
+                  <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+                  <strong class="property-price text-primary mb-3 d-block text-success">$2,000,000</strong>
+                  <ul class="property-specs-wrap mb-3 mb-lg-0">
+                    <li>
+                      <span class="property-specs">Beds</span>
+                      <span class="property-specs-number">2 <sup>+</sup></span>
+                      
+                    </li>
+                    <li>
+                      <span class="property-specs">Baths</span>
+                      <span class="property-specs-number">2</span>
+                      
+                    </li>
+                    <li>
+                      <span class="property-specs">SQ FT</span>
+                      <span class="property-specs-number">7,000</span>
+                      
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="property-entry h-100">
+                <a href="property-details.html" class="property-thumbnail">
+                  <div class="offer-type-wrap">
+                    <span class="offer-type bg-success">Rent</span>
+                  </div>
+                  <img src="img/slid2.jpg" alt="Image" class="img-fluid">
+                </a>
+                <div class="p-4 property-body">
+                  <a href="#" class="property-favorite"><i class="fa-regular fa-heart"></i></span></a>
+                  <h2 class="property-title"><a class="address" href="property-details.html">625 Shokolani St</a></h2>
+                  <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+                  <strong class="property-price text-primary mb-3 d-block text-success">$2,000,000</strong>
+                  <ul class="property-specs-wrap mb-3 mb-lg-0">
+                    <li>
+                      <span class="property-specs">Beds</span>
+                      <span class="property-specs-number">2 <sup>+</sup></span>
+                      
+                    </li>
+                    <li>
+                      <span class="property-specs">Baths</span>
+                      <span class="property-specs-number">2</span>
+                      
+                    </li>
+                    <li>
+                      <span class="property-specs">SQ FT</span>
+                      <span class="property-specs-number">7,000</span>
+                      
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="property-entry h-100">
+                <a href="property-details.html" class="property-thumbnail">
+                  <div class="offer-type-wrap">
+                    <span class="offer-type bg-info">Exchange</span>
+                  </div>
+                  <img src="img/slid2.jpg" alt="Image" class="img-fluid">
+                </a>
+                <div class="p-4 property-body">
+                  <a href="#" class="property-favorite"><i class="fa-regular fa-heart"></i></span></a>
+                  <h2 class="property-title"><a class="address" href="property-details.html">625 Shokolani St</a></h2>
+                  <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+                  <strong class="property-price text-primary mb-3 d-block text-success">$2,000,000</strong>
+                  <ul class="property-specs-wrap mb-3 mb-lg-0">
+                    <li>
+                      <span class="property-specs">Beds</span>
+                      <span class="property-specs-number">2 <sup>+</sup></span>
+                      
+                    </li>
+                    <li>
+                      <span class="property-specs">Baths</span>
+                      <span class="property-specs-number">2</span>
+                      
+                    </li>
+                    <li>
+                      <span class="property-specs">SQ FT</span>
+                      <span class="property-specs-number">7,000</span>
+                      
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+      <section class="swiper" style="height: 620px;">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/slid2.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/slid3.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/stock.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="fontawesome-free-6.0.0-web/js/all.min.js"></script>
+
+    
+</body>
+</html>
